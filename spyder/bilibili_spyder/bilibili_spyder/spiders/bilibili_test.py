@@ -5,6 +5,12 @@ from bilibili_spyder.items import BilibiliNavBtnItem
 
 
 class BilibiliTestSpider(scrapy.Spider):
+    '''
+        Spider for buttons in navigate menu on www.bilibili.com.
+    This class retrives titles of buttons and send them to BilibiliSpyderPipeline
+
+    '''
+
     name = 'bilibili_test'
     allowed_domains = ['bilibili.com']
     start_urls = ['http://www.bilibili.com/']

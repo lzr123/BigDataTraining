@@ -7,6 +7,10 @@
 
 
 class BilibiliSpyderPipeline(object):
+    '''
+        This is the pipeline which receive data from BilibiliTestSpider
+    and store them to a CSV file.
+    '''
     def process_item(self, item, spider):
 
         with open('./nav_btn_item.csv', 'a') as csv_rec:
