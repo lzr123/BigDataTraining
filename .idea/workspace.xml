@@ -28,6 +28,11 @@
               <item name="BigDataTraining" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigDataTraining" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BigDataTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigDataTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="spyder" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -36,7 +41,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spyder/bilibili_spyder" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +81,7 @@
       <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3294964" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
