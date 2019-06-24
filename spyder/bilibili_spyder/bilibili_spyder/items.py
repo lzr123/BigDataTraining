@@ -19,13 +19,3 @@ class BilibiliNavBtnItem(scrapy.Item):
     title = scrapy.Field()
     url = scrapy.Field()
 
-class BilibiliLinkMoreItem(scrapy.Item):
-    '''
-        This class stores urls pointed to video list stores all
-    videos in each class
-    :param label: representing class name
-    :param url: store url linking to video list
-    '''
-
-    label = scrapy.Field()
-    url = scrapy.Field()
