@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy_redis.spiders import RedisCrawlSpider
 
 from bilibili_spyder.items import BilibiliNavBtnItem
 
@@ -8,7 +9,6 @@ class BilibiliTestSpider(scrapy.Spider):
     '''
         Spider for buttons in navigate menu on www.bilibili.com.
     This class retrives titles of buttons and send them to BilibiliSpyderPipeline
-
     '''
 
     name = 'bilibili_test'
@@ -18,11 +18,11 @@ class BilibiliTestSpider(scrapy.Spider):
     def parse(self, response):
 
         class_nav_menu = response.xpath(r'//ul[@class="nav-menu"]')
-        btn_title_item = class_nav_menu[0].xpath('./li')
+        btn_title_item = class_nav_menu[0].xpath(r'./li')
 
         for btn_title in btn_title_item:
             item = BilibiliNavBtnItem()
             item['title'] = btn_title.xpath(r'./a/div[@class!="num-wrap"]/text()').extract_first()
             item['url'] = btn_title.xpath(r'./a[@href]').attrib['href'].lstrip('//')
-            if item['title'] is not None:
+            if item['title'] is not None and item['title'] != '首页':
                 yield item

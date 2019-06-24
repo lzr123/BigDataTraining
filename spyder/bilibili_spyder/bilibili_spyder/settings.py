@@ -44,17 +44,22 @@ ROBOTSTXT_OBEY = False
 #   'Accept-Language': 'en',
 #}
 
+'''
+      WARNNING
+      These settings must be deactivated when using BilibiliTestSpider
+'''
+
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'bilibili_spyder.middlewares.BilibiliSpyderSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+   'bilibili_spyder.middlewares.BilibiliSpyderSpiderMiddleware': 543,
+}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'bilibili_spyder.middlewares.BilibiliSpyderDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'bilibili_spyder.middlewares.BilibiliSpyderDownloaderMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
