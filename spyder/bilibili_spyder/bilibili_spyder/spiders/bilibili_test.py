@@ -2,6 +2,7 @@
 import scrapy
 from scrapy_redis.spiders import RedisCrawlSpider
 
+from GlobalParmas import VIDEO_TYPE_CODE
 from bilibili_spyder.items import BilibiliNavBtnItem
 
 
@@ -23,6 +24,7 @@ class BilibiliTestSpider(scrapy.Spider):
         for btn_title in btn_title_item:
             item = BilibiliNavBtnItem()
             item['title'] = btn_title.xpath(r'./a/div[@class!="num-wrap"]/text()').extract_first()
-            item['url'] = btn_title.xpath(r'./a[@href]').attrib['href'].lstrip('//')
             if item['title'] is not None and item['title'] != '首页':
+                item['url'] = 'https://' + btn_title.xpath(r'./a[@href]').attrib['href']\
+                                    .lstrip('//') + '?type=' + VIDEO_TYPE_CODE[item['title']]
                 yield item

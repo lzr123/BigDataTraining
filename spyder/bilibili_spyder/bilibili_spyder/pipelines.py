@@ -6,14 +6,11 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import redis
 
+from RedisUtils import RedisUtils
 from bilibili_spyder.items import BilibiliNavBtnItem
 
 
-class RedisUtils():
 
-    @staticmethod
-    def insert_to_redis(pipeline, item, key):
-        pipeline.redis_obj.rpush('bilibili:%s' % key, '%s:%s' % (item['title'], item['url']))
 
 class BilibiliSpyderPipeline(object):
     '''
@@ -30,3 +27,6 @@ class BilibiliSpyderPipeline(object):
 
         with open('./nav_btn_item.csv', 'a') as csv_rec:
             csv_rec.write('{},{}\n'.format(item['title'], item['url']).format('utf-8'))
+
+        if isinstance(item, BilibiliNavBtnItem):
+            RedisUtils.insert_to_redis(self, item, 'class_urls')
