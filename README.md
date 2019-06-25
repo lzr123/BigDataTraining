@@ -8,6 +8,7 @@ This branch is for spider which retrive data from www.bilibili.com. Please put y
 
 #### 1. bilibili_spyder
 
+<font color=#ff0000>DO NOT RUN THE FILE ./BigDataTraining/spyder/bilibili_spyder IF YOU DO NOT KNOW WHAT YOU ARE DOING!!!</font>
 ​	This package contains a spider which crawls URLs pointing to the list of each video categories.
 
 These URLs are stored behand these navigate buttons.
