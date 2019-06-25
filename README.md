@@ -42,37 +42,14 @@ These URLs are stored behand these buttons called “更多”.
 
 This spider write URLs to Redis database for other spiders to use.
 
-Record format: $Real\ URL + type\ code​$, type code is defined in file `GlobalParams.py`
+Record format: $Real\ URL + type\ code$, type code is defined in file `GlobalParams.py`
 
 
 #### 3. Utils
 
 Project structure:
 
-```mermaid
-graph LR
-A[Utils]
-B{GlobalParams.py}
-C{RedisUtils}
-D{UrlUtils}
-E((VIDEO_TYPE_CODE))
-F((UrlUtils))
-G((RedisUtils))
-a>insert_url_to_redis]
-b>move_video_type_to_tile]
-c>remove_video_type]
-d>get_video_type]
-A --- B
-A --- C
-A --- D
-B --- E
-C --- G
-D --- F
-C --- a
-F --- b
-F --- c
-F --- d
-```
+![1561430115166](1561430115166.png)
 
 
 
