@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c36250d-a9d8-4dde-9ebd-92e1ad30d3cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Utils/UrlUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoListGen/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoListGen/video_list_auto_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/RedisUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/RedisUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Utils/UrlUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/UrlUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/spyder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/spyder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili_spyder/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili_spyder/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav_btn_item.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/spiders/bilibili_link_more_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/spiders/bilibili_link_more_spider.py" afterDir="false" />
@@ -33,10 +35,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../Utils/RedisUtils.py">
+        <entry file="file://$PROJECT_DIR$/../../Utils/UrlUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="207">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -111,6 +113,7 @@
         <option value="$PROJECT_DIR$/../../Utils/GlobalParmas.py" />
         <option value="$PROJECT_DIR$/bilibili_spyder/spiders/bilibili_test.py" />
         <option value="$PROJECT_DIR$/bilibili_spyder/pipelines.py" />
+        <option value="$PROJECT_DIR$/../../Utils/UrlUtils.py" />
       </list>
     </option>
   </component>
@@ -246,7 +249,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33513513" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -256,7 +258,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896653" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38136828" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38136828" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3930131" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,16 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bilibili_spyder/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#193#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/GlobalParmas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -427,8 +419,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/RedisUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="95">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bilibili_spyder/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#193#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utils/UrlUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
