@@ -4,6 +4,7 @@ import re
 import scrapy
 from scrapy_redis.spiders import RedisCrawlSpider
 
+from UrlUtils import UrlUtils
 from link_more_spyder.items import LinkMoreSpyderItem
 
 
@@ -25,12 +26,6 @@ class BilibiliLinkMoreSpider(RedisCrawlSpider):
             item = LinkMoreSpyderItem()
             url = ''
             try:
-                # item['url'] = clearfix.xpath(
-                #     r'./div[@class="video-floor-m l-con"]' +
-                #     r'/div[@class="zone-title"]' +
-                #     r'/div[@class="headline clearfix"]' +
-                #     r'/a[@href]'
-                # ).attrib['href']
                 url = response.url + clearfix.xpath(
                     r'./div' +
                     r'/div' +
@@ -44,14 +39,6 @@ class BilibiliLinkMoreSpider(RedisCrawlSpider):
                 print('\t', clearfix)
                 print('\t', response)
             else:
-                type_code = re.search('\?type=([0-9]*)', url).group()
-                print('Type code: ', type_code)
-                url = re.sub(r'\?type=[0-9]*/v/[a-z]*/', '', url, count=0)
-                # print('Item URL: ', url)
-                item['url'] = url + type_code
-                print('Final URL: ', item['url'])
-                # print('Processed URL: ', item['url'])
-
-
+                item['url'] = UrlUtils.move_video_type_to_tile(url)[0]
             yield item
 

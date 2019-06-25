@@ -29,4 +29,4 @@ class BilibiliSpyderPipeline(object):
             csv_rec.write('{},{}\n'.format(item['title'], item['url']).format('utf-8'))
 
         if isinstance(item, BilibiliNavBtnItem):
-            RedisUtils.insert_to_redis(self, item, 'class_urls')
+            RedisUtils.insert_url_to_redis(self, item, 'class_urls')
