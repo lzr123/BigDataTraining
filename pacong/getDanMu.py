@@ -79,10 +79,8 @@ def getDanMu(video_url):
             danmu_url = 'http://comment.bilibili.com/{}.xml'.format(danmu_id)
             danmu_html = __open_url(url=danmu_url)
             soup = BS(danmu_html, 'lxml')
-            soup.select()
             all_d = soup.select('d')
             for d in all_d:
-
                 # 把d标签中P的各个属性分离开
                 danmu_list = d['p'].split(',')
                 # d.get_text()是弹幕内容
