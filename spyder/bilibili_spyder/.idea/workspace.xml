@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c36250d-a9d8-4dde-9ebd-92e1ad30d3cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../videoListGen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../videoListGen/video_list_auto_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/RedisUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/RedisUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/UrlUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/UrlUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/spyder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/spyder.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nav_btn_item.csv" beforeDir="false" afterPath="$PROJECT_DIR$/nav_btn_item.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/spiders/bilibili_link_more_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/link_more_spyder/spiders/bilibili_link_more_spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Utils/UrlUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="131">
+              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -249,6 +241,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33513513" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -436,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/UrlUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="131">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
         </state>
       </provider>
     </entry>

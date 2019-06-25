@@ -41,6 +41,10 @@ class UrlUtils():
         else:
             return url + component
 
+    @staticmethod
+    def get_last_url_component(url):
+        return re.search(r'(/[a-z_ ]*)/$', url).group()
+
 if __name__ == '__main__':
 
     url = 'https://www.bilibili.com/v/kichiku/mad/'

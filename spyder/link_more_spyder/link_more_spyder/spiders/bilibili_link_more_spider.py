@@ -41,7 +41,7 @@ class BilibiliLinkMoreSpider(RedisCrawlSpider):
             else:
                 type_code = UrlUtils.get_video_type(url)
                 url_parts = url.split('?type=')
-                url = UrlUtils.add_component_to_url(url_parts[0], re.search(r'(/[a-z_]*)/$', url_parts[1]).group())
+                url = UrlUtils.add_component_to_url(url_parts[0], re.search(r'(/[a-z_ ]*)/$', url_parts[1]).group())
                 url = UrlUtils.add_video_type(url, type_code)
                 item['url'] = url
             yield item
