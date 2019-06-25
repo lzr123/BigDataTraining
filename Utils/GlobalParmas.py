@@ -1,3 +1,4 @@
+import datetime
 
 VIDEO_TYPE_CODE = {
     '动画': '1',
@@ -16,3 +17,9 @@ VIDEO_TYPE_CODE = {
     '影视': '14',
   '放映厅': '15'
 }
+
+# Controls how much video will be crawled
+TIME_RANGE = datetime.timedelta(days=60)
+
+# Chrome browser driver path
+CHROME_DRIVER_PATH = r'D:\Software\chromedriver.exe'

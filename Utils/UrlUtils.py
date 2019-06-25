@@ -15,8 +15,9 @@ class UrlUtils():
 
     @staticmethod
     def remove_video_type(url):
-        url = re.sub(r'\?type=[0-9]*/v/[a-z]*/', '', url, count=0)
-        return url
+        type_code = re.search('\?type=([0-9]*)', url).group()[6:]
+        url = re.sub(r'/\?type=[0-9]*', '', url, count=0)
+        return url, type_code
 
     @staticmethod
     def get_video_type(url):
@@ -34,9 +35,12 @@ class UrlUtils():
     @staticmethod
     def add_component_to_url(url, component):
 
-        if re.search(r'(/$)', url) is not None and re.search(r'^/', component) is not None:
+        tmp1 = url[-1]
+        tmp2 = component[0]
+
+        if tmp1 == '/' and tmp2 == '/':
             return url + component[1:]
-        elif re.search(r'(/$)', url) is None and re.search(r'^/', component) is None:
+        elif tmp1 != '/' and tmp2 != '/':
             return url + '/' + component
         else:
             return url + component
@@ -47,6 +51,6 @@ class UrlUtils():
 
 if __name__ == '__main__':
 
-    url = 'https://www.bilibili.com/v/kichiku/mad/'
-    url = UrlUtils.add_component_to_url(url, '/comm/')
+    url = 'https://www.bilibili.com/v/kichiku/mad/?type=10'
+    url = UrlUtils.remove_video_type(url)
     print(url)
