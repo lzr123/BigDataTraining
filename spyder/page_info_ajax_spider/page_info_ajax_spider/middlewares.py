@@ -4,17 +4,11 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-import datetime
-from time import sleep
 
 from scrapy import signals
-from scrapy.http import HtmlResponse
-
-from GlobalParmas import TIME_RANGE
-from UrlUtils import UrlUtils
 
 
-class ListUrlSpyderSpiderMiddleware(object):
+class PageInfoAjaxSpiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -62,7 +56,7 @@ class ListUrlSpyderSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class ListUrlSpyderDownloaderMiddleware(object):
+class PageInfoAjaxSpiderDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -78,23 +72,6 @@ class ListUrlSpyderDownloaderMiddleware(object):
         # Called for each request that goes through the downloader
         # middleware.
 
-        url = request.url
-
-        url, type_code = UrlUtils.remove_video_type(url)
-
-        crt_datetime = datetime.datetime.now()
-        end_datetime = crt_datetime - TIME_RANGE
-
-        crt_datetime_str = crt_datetime.strftime('%Y-%m-%d')
-        end_datetime_str = end_datetime.strftime('%Y-%m-%d')
-
-        url = UrlUtils.add_component_to_url(url,
-                                            '#/all/click/0/1/{},{}'.format(end_datetime_str, crt_datetime_str))
-
-        request = request.replace(url=url)
-
-        # print(request)
-
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object
@@ -106,22 +83,11 @@ class ListUrlSpyderDownloaderMiddleware(object):
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
 
-        brower_driver = spider.browser_driver
-        brower_driver.get(url=request.url)
-
-        # sleep(1)
-        page_text = brower_driver.page_source
-
-
         # Must either;
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
-        # return response
-        return HtmlResponse(url=spider.browser_driver.current_url,
-                            body=page_text,
-                            encoding='utf-8',
-                            request=request)
+        return response
 
     def process_exception(self, request, exception, spider):
         # Called when a download handler or a process_request()

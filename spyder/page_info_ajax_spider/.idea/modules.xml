@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/list_url_spyder.iml" filepath="$PROJECT_DIR$/.idea/list_url_spyder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/page_info_ajax_spider.iml" filepath="$PROJECT_DIR$/.idea/page_info_ajax_spider.iml" />
     </modules>
   </component>
 </project>
