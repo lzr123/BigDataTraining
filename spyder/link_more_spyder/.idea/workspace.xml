@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84a6bc41-e1ab-4c76-810f-560799793182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Utils/PackageCrawler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../page_info_ajax_spider/debug.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/RedisUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/RedisUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bilibili_spyder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bilibili_spyder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/list_url_spyder.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/debug.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/spiders/list_url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/scrapy.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,20 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Utils/RedisUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/link_more_spyder/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-              <folding>
-                <element signature="e#168#177#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -363,16 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link_more_spyder/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="e#168#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/link_more_spyder/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -383,10 +340,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/link_more_spyder/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding>
+            <element signature="e#168#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/RedisUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="95">
+          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
         </state>
       </provider>
     </entry>

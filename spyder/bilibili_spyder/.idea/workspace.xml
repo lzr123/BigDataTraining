@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c36250d-a9d8-4dde-9ebd-92e1ad30d3cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Utils/PackageCrawler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../page_info_ajax_spider/debug.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/RedisUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/RedisUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../link_more_spyder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/list_url_spyder.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/debug.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/list_url_spyder/spiders/list_url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list_url_spyder/scrapy.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
