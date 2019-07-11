@@ -1,0 +1,1992 @@
+/*分区菜单*/
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    left: 8.3%;
+    position: fixed;
+    z-index: 70;
+
+}
+ 
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/*鼠标移动到选项上修改背景颜色 */
+#menu li a:hover {
+    color: white;
+    background-color: rgb(251,114,153)/* #E6939E*/;
+    /*background-color: #F45A8D;*/
+}
+
+/*高亮*/
+#menu .active a{
+    color: #fff; 
+    background-color: rgb(251,114,153)/*#E6939E*/;
+}
+
+/*透明度*/
+#menu { 
+    opacity: 0.7; 
+    border-radius: 10px;
+}
+
+.nav-name {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    color: #222;
+    font-size: 13px;
+    /* height: 40px; */
+    padding-top: 5px;
+
+    /* line-height: 50px; */
+}
+
+
+/*图标框架*/
+.icon-wrap{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+/*图标的大图片*/
+.picture{
+    position: relative;
+    left: -141px
+}
+/*第1个*/
+.icon1{
+    top: -75px
+}
+/*第14个*/
+.icon2{
+    top: -908px
+}
+/*第2个*/
+.icon3{
+    top: -140px
+}
+/*第25个*/
+.icon4{
+    top: -1611px
+}
+/*第4个*/
+.icon5{
+    top: -266px
+}
+/*第7个*/
+.icon6{
+    top: -461px
+}
+/*第3个*/
+.icon7{
+    top: -203px
+}
+/*第8个*/
+.icon8{
+    top: -525px
+}
+/*第27个*/
+.icon9{
+    top: -1741px
+}
+/*第15个*/
+.icon10{
+    top: -970px
+}
+/*第5个*/
+.icon11{
+    top: -332px
+}
+/*第11个*/
+.icon12{
+    top: -718px
+}
+/*第19个*/
+.icon13{
+    top: -1228px
+}
+/*第16个*/
+.icon14{
+    top: -1032px
+}
+/*第21个*/
+.icon15{
+    top: -1356px
+}
+/*第13个*/
+.icon16{
+    top: -845px
+}
+
+/*标签主体*/
+.top-tag {
+    width: 80%;
+    height: 5%;
+/*    border-style: solid;
+    border-color: yellow;*/
+    position: absolute;
+    left: 11%;
+    top: 12%;
+    /*opacity: 0.7; */
+    border-radius: 10px;
+}
+
+/*标签菜单*/
+.tag-menu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+/*    margin-left: 0%;*/
+}
+
+.tag-menu .tag-title{
+    margin-right: 6px;
+}
+
+.tag-menu li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+/*标签*/
+.tag-name span{
+/*    display: inline-block;*/
+    vertical-align: top;
+    font-size: 13px;
+    /*transform: scale(.85);*/
+    color: black;
+    border-radius: 6px;
+/*    border: 1px solid pink;*/
+/*    height: 30px;*/
+/*    line-height: 10px;*/
+background-color: rgb(255,175,201);
+    padding: 1px 10px;
+    margin-right: 4px;
+    font-family: Microsoft YaHei;
+/*    top: 10px;*/
+/*    position: absolute;*/
+}
+
+/*个人推荐按钮*/
+.recommend-button button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin-top:10px;
+    margin-right: 10px;     
+    /*position: fixed;*/
+    /*z-index: 70;*/
+}
+
+/*总布局*/
+.content-body{
+    width: 90%;
+    height: 78%;
+    top: 18%;
+    left: 5%;
+    right: 5%;
+    position:absolute;
+    /*border-style: solid;*/
+    /*border-color: pink;*/
+}
+
+/*左上布局*/
+.container-lt{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+
+/*中间布局*/
+.container-m{
+    width: 30%;
+    height: 100%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*右上布局*/
+.container-rt{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+/*“推荐列表”标题*/
+#rd div{
+    position: relative;
+    font-size: 15px;
+    left: 40px;
+    top: 20px;
+    /*float: left;*/
+}
+
+/*推荐列表列表*/
+#rd ul{
+    position: relative;
+    left: 0px;
+    top: 30px;
+    overflow: hidden;
+}
+
+/*推荐列表单元*/
+#rd ul li{
+    position: relative;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/*推荐列表数字*/
+#rd ul li i{
+    position: absolute;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    min-width: 16px;
+    text-align: center;
+    background-color: #b8c0cc;
+    border-radius: 4px;
+    padding: 0 3px;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/*推荐列表链接*/
+#rd ul li a:link{
+    color: black;
+    text-decoration: none;
+}
+
+/*访问后不变色*/
+#rd ul li a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+/*鼠标在上面变蓝色*/
+#rd ul li a:hover{
+    color: rgb(0,161,214);
+    text-decoration: none;
+}
+
+/*超出字数换行*/
+#rd ul li a{
+    display: block;
+    word-break:keep-all;      /* 不换行 */
+    white-space:nowrap;       /* 不换行 */
+    overflow:hidden;          /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis; 
+
+}
+
+/*TOP/推荐用户前三单元*/
+#rd ul li .top-rank{
+    position: absolute;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    min-width: 16px;
+    text-align: center;
+    background-color: #f25d8e;
+    border-radius: 4px;
+    padding: 0 3px;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+/*毛玻璃效果*/
+#lt {
+    background-position: 1620px 820px
+}
+
+#ld {
+    background-position: 1620px 528px
+}
+
+#m{
+    background-position: 1145px 820px
+}
+
+#rt {
+    background-position: 726px 820px
+}
+
+#rd {
+    background-position: 726px 528px
+}
+
+
+/*左上布局*/
+.container-lt1{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld1{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt1{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md1{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt1{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd1{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt1 {
+    background-position: 1620px 820px
+}
+
+#ld1 {
+    background-position: 1620px 528px
+}
+
+#mt1 {
+    background-position: 1145px 820px
+}
+
+#md1 {
+    background-position: 1144px 528px
+}
+
+#rt1 {
+    background-position: 726px 820px
+}
+
+#rd1 {
+    background-position: 726px 528px
+}
+
+
+/*左上布局*/
+.container-lt3{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld3{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt3{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md3{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt3{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd3{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt3 {
+    background-position: 1620px 820px
+}
+
+#ld3 {
+    background-position: 1620px 528px
+}
+
+#mt3 {
+    background-position: 1145px 820px
+}
+
+#md3 {
+    background-position: 1144px 528px
+}
+
+#rt3 {
+    background-position: 726px 820px
+}
+
+#rd3 {
+    background-position: 726px 528px
+}
+
+
+/*左上布局*/
+.container-lt4{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld4{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt4{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md4{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt4{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd4{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt4 {
+    background-position: 1620px 820px
+}
+
+#ld4 {
+    background-position: 1620px 528px
+}
+
+#mt4 {
+    background-position: 1145px 820px
+}
+
+#md4 {
+    background-position: 1144px 528px
+}
+
+#rt4 {
+    background-position: 726px 820px
+}
+
+#rd4 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt5{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld5{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt5{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md5{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt5{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd5{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt5 {
+    background-position: 1620px 820px
+}
+
+#ld5 {
+    background-position: 1620px 528px
+}
+
+#mt5 {
+    background-position: 1145px 820px
+}
+
+#md5 {
+    background-position: 1144px 528px
+}
+
+#rt5 {
+    background-position: 726px 820px
+}
+
+#rd5 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt6{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld6{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt6{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md6{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt6{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd6{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt6 {
+    background-position: 1620px 820px
+}
+
+#ld6 {
+    background-position: 1620px 528px
+}
+
+#mt6 {
+    background-position: 1145px 820px
+}
+
+#md6 {
+    background-position: 1144px 528px
+}
+
+#rt6 {
+    background-position: 726px 820px
+}
+
+#rd6 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt7{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld7{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt7{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md7{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt7{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd7{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt7 {
+    background-position: 1620px 820px
+}
+
+#ld7 {
+    background-position: 1620px 528px
+}
+
+#mt7 {
+    background-position: 1145px 820px
+}
+
+#md7 {
+    background-position: 1144px 528px
+}
+
+#rt7 {
+    background-position: 726px 820px
+}
+
+#rd7 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt8{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld8{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt8{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md8{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt8{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd8{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+/*毛玻璃效果*/
+#lt8 {
+    background-position: 1620px 820px
+}
+
+#ld8 {
+    background-position: 1620px 528px
+}
+
+#mt8 {
+    background-position: 1145px 820px
+}
+
+#md8 {
+    background-position: 1144px 528px
+}
+
+#rt8 {
+    background-position: 726px 820px
+}
+
+#rd8 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt9{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld9{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt9{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md9{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt9{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd9{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt9 {
+    background-position: 1620px 820px
+}
+
+#ld9 {
+    background-position: 1620px 528px
+}
+
+#mt9 {
+    background-position: 1145px 820px
+}
+
+#md9 {
+    background-position: 1144px 528px
+}
+
+#rt9 {
+    background-position: 726px 820px
+}
+
+#rd9 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt10{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld10{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt10{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md10{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt10{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd10{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt10 {
+    background-position: 1620px 820px
+}
+
+#ld10 {
+    background-position: 1620px 528px
+}
+
+#mt10 {
+    background-position: 1145px 820px
+}
+
+#md10 {
+    background-position: 1144px 528px
+}
+
+#rt10 {
+    background-position: 726px 820px
+}
+
+#rd10 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt11{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld11{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt11{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md11{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt11{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd11{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt11 {
+    background-position: 1620px 820px
+}
+
+#ld11 {
+    background-position: 1620px 528px
+}
+
+#mt11 {
+    background-position: 1145px 820px
+}
+
+#md11 {
+    background-position: 1144px 528px
+}
+
+#rt11 {
+    background-position: 726px 820px
+}
+
+#rd11 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt12{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld12{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt12{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md12{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt12{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd12{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt12 {
+    background-position: 1620px 820px
+}
+
+#ld12 {
+    background-position: 1620px 528px
+}
+
+#mt12 {
+    background-position: 1145px 820px
+}
+
+#md12 {
+    background-position: 1144px 528px
+}
+
+#rt12 {
+    background-position: 726px 820px
+}
+
+#rd12 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt13{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld13{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt13{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md13{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt13{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd13{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt13 {
+    background-position: 1620px 820px
+}
+
+#ld13 {
+    background-position: 1620px 528px
+}
+
+#mt13 {
+    background-position: 1145px 820px
+}
+
+#md13 {
+    background-position: 1144px 528px
+}
+
+#rt13 {
+    background-position: 726px 820px
+}
+
+#rd13 {
+    background-position: 726px 528px
+}
+
+
+
+/*左上布局*/
+.container-lt14{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld14{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+/*中上布局*/
+.container-mt14{
+    width: 30%;
+    height: 30%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*中下布局*/
+.container-md14{
+    width: 30%;
+    height: 70%;
+    /*border-style: solid ;*/
+    /*border-color: pink;*/
+    position:absolute;
+    left: 35%;
+    top: 30%;
+}
+
+/*右上布局*/
+.container-rt14{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd14{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt14 {
+    background-position: 1620px 820px
+}
+
+#ld14 {
+    background-position: 1620px 528px
+}
+
+#mt14 {
+    background-position: 1145px 820px
+}
+
+#md14 {
+    background-position: 1144px 528px
+}
+
+#rt14 {
+    background-position: 726px 820px
+}
+
+#rd14 {
+    background-position: 726px 528px
+}
+
+
+
+
+/*番剧布局*/
+/*左上布局*/
+.container-lt2{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld2{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+
+/*中间布局*/
+.container-m2{
+    width: 30%;
+    height: 100%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*右上布局*/
+.container-rt2{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd2{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+
+/*毛玻璃效果*/
+#lt2 {
+    background-position: 1620px 820px
+}
+
+#ld2 {
+    background-position: 1620px 528px
+}
+
+#m2{
+    background-position: 1145px 820px
+}
+
+#rt2 {
+    background-position: 726px 820px
+}
+
+#rd2 {
+    background-position: 726px 528px
+}
+
+
+
+
+
+/*放映厅布局*/
+.slide {
+    width: 33.3%;
+    height: 33.3%;
+    /*border-style: solid;*/
+    /*border-style: black;*/
+}
+
+/*总布局*/
+.slide .content-body{
+    width: 90%;
+    height: 78%;
+    top: 4%;
+    left: 5%;
+    right: 5%;
+    position:relative;
+    /*border-style: solid;*/
+    /*border-color: pink;*/
+}
+
+/*标签主体*/
+.slide1 .top-tag {
+    width: 80%;
+    height: 5%;
+/*    border-style: solid;
+    border-color: yellow;*/
+    position: relative;
+    left: 11%;
+    top: 3%;
+    /*opacity: 0.7; */
+    border-radius: 10px;
+}
+
+/*标签菜单*/
+.slide1 .tag-menu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+/*    margin-left: 0%;*/
+}
+
+.slide1 .tag-menu .tag-title{
+    margin-right: 6px;
+}
+
+.slide1 .tag-menu li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+/*标签*/
+.slide1 .tag-name span{
+/*    display: inline-block;*/
+    vertical-align: top;
+    font-size: 13px;
+    /*transform: scale(.85);*/
+    color: black;
+    border-radius: 6px;
+/*    border: 1px solid pink;*/
+/*    height: 30px;*/
+/*    line-height: 10px;*/
+background-color: rgb(255,175,201);
+    padding: 1px 10px;
+    margin-right: 4px;
+    font-family: Microsoft YaHei;
+/*    top: 10px;*/
+/*    position: absolute;*/
+}
+
+
+/*标签主体*/
+.slide2 .top-tag {
+    width: 80%;
+    height: 5%;
+/*    border-style: solid;
+    border-color: yellow;*/
+    position: relative;
+    left: 11%;
+    top: 3%;
+    /*opacity: 0.7; */
+    border-radius: 10px;
+}
+
+/*标签菜单*/
+.slide2 .tag-menu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+/*    margin-left: 0%;*/
+}
+
+.slide2 .tag-menu .tag-title{
+    margin-right: 6px;
+}
+
+.slide2 .tag-menu li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+/*标签*/
+.slide2 .tag-name span{
+/*    display: inline-block;*/
+    vertical-align: top;
+    font-size: 13px;
+    /*transform: scale(.85);*/
+    color: black;
+    border-radius: 6px;
+/*    border: 1px solid pink;*/
+/*    height: 30px;*/
+/*    line-height: 10px;*/
+    background-color: rgb(255,175,201);
+    padding: 1px 10px;
+    margin-right: 4px;
+    font-family: Microsoft YaHei;
+/*    top: 10px;*/
+/*    position: absolute;*/
+}
+
+/*标签主体*/
+.slide3 .top-tag {
+    width: 80%;
+    height: 5%;
+/*    border-style: solid;
+    border-color: yellow;*/
+    position: relative;
+    left: 11%;
+    top: 3%;
+    /*opacity: 0.7; */
+    border-radius: 10px;
+}
+
+/*标签菜单*/
+.slide3 .tag-menu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+/*    margin-left: 0%;*/
+}
+
+.slide3 .tag-menu .tag-title{
+    margin-right: 6px;
+}
+
+.slide3 .tag-menu li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+/*标签*/
+.slide3 .tag-name span{
+/*    display: inline-block;*/
+    vertical-align: top;
+    font-size: 13px;
+    /*transform: scale(.85);*/
+    color: black;
+    border-radius: 6px;
+/*    border: 1px solid pink;*/
+/*    height: 30px;*/
+/*    line-height: 10px;*/
+    background-color: rgb(255,175,201);
+    padding: 1px 10px;
+    margin-right: 4px;
+    font-family: Microsoft YaHei;
+/*    top: 10px;*/
+/*    position: absolute;*/
+}
+
+
+/*左上布局*/
+.container-lt15-s1{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld15-s1{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+
+/*中间布局*/
+.container-m15-s1{
+    width: 30%;
+    height: 100%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*右上布局*/
+.container-rt15-s1{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd15-s1{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt15-s1 {
+    background-position: 1620px 820px
+}
+
+#ld15-s1 {
+    background-position: 1620px 528px
+}
+
+#m15-s1 {
+    background-position: 1145px 820px
+}
+
+#rt15-s1 {
+    background-position: 726px 820px
+}
+
+#rd15-s1 {
+    background-position: 726px 528px
+}
+
+
+/*左上布局*/
+.container-lt15-s2{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld15-s2{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+
+/*中间布局*/
+.container-m15-s2{
+    width: 30%;
+    height: 100%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*右上布局*/
+.container-rt15-s2{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd15-s2{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+
+/*毛玻璃效果*/
+#lt15-s2 {
+    background-position: 1620px 820px
+}
+
+#ld15-s2 {
+    background-position: 1620px 528px
+}
+
+#m15-s2 {
+    background-position: 1145px 820px
+}
+
+#rt15-s2 {
+    background-position: 726px 820px
+}
+
+#rd15-s2 {
+    background-position: 726px 528px
+}
+
+
+/*左上布局*/
+.container-lt15-s3{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:red;*/
+}
+
+/*左下布局*/
+.container-ld15-s3{
+    width: 35%;
+    height: 50%;
+    /*border-style:solid;*/
+    /*border-color:black;*/
+}
+
+
+/*中间布局*/
+.container-m15-s3{
+    width: 30%;
+    height: 100%;
+    /*border-style: solid ;*/
+    /*border-color: purple;*/
+    position:absolute;
+    left:35%;
+    top: 0%;
+}
+
+/*右上布局*/
+.container-rt15-s3{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 0%;
+}
+
+/*右下布局*/
+.container-rd15-s3{
+    width: 35%;
+    height: 50%;
+    /*border-style: solid ;*/
+    /*border-color: blue;*/
+    position:absolute;
+    left: 65%;
+    top: 50%;
+}
+
+/*实际图的边框*/
+.statpic{
+    position: relative;
+    width: 94%;
+    height: 90%;
+    left: 3%;
+    top: 5%;
+/*    border-style:solid;
+    border-color:pink;*/
+    border:1px solid #00AAE2;  
+    box-shadow:0 0 10px #00A1D6; 
+    border-radius: 5%; 
+    background-image: url(../images/pic/pic1.png) ;
+    }
+
+/*毛玻璃效果*/
+#lt15-s3 {
+    background-position: 1620px 820px
+}
+
+#ld15-s3 {
+    background-position: 1620px 528px
+}
+
+#m15-s3 {
+    background-position: 1145px 820px
+}
+
+#rt15-s3 {
+    background-position: 726px 820px
+}
+
+#rd15-s3 {
+    background-position: 726px 528px
+}
